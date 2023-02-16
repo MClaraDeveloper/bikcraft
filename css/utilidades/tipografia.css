@@ -1,0 +1,67 @@
+.font-pop-pp {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+.font-rob-pp {
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+.font-pop-p {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.font-rob-p {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+.font-pop-m,
+.font-pop-m-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+.font-pop-m-b {
+  font-weight: 600;
+}
+.font-rob-m {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+.font-pop-g {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-rob-g,
+.font-rob-g-b {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+.font-rob-g-b {
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.font-pop-xg {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.font-rob-xg {
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+}
+
+.font-rob-g {
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+.font-pop-gg {
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+@media (max-width: 1200px) {
+  .font-pop-gg {
+    font-size: 3rem;
+  }
+  .font-rob-g,
+  .font-rob-g-b {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .font-pop-gg {
+    font-size: 2rem;
+  }
+  .font-pop-xg,
+  .font-rob-xg {
+    font-size: 1.5rem;
+  }
+}
