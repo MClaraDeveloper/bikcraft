@@ -1,0 +1,52 @@
+.footer {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 2fr 2fr 2fr;
+  background-color: var(--cor-12);
+  padding-top: 60px;
+}
+.footer-contato h2 {
+  padding-bottom: 20px;
+}
+.footer-contato2 {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.footer h3,
+.footer-bike img {
+  padding-left: 100px;
+}
+
+.footer h3 {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footer h3::before {
+  content: "©";
+  color: var(--cor-8);
+}
+.footer-redes img {
+  display: inline-flex;
+  padding-right: 20px;
+}
+.footer-informacoes li,
+.footer-contato li {
+  color: var(--cor-5);
+}
+.footer-informacoes h2 {
+  padding-bottom: 20px;
+}
+.footer-informacoes li + li {
+  padding-top: 10px;
+}
+.footer-contato2 li::after {
+  content: "";
+  height: 2px;
+  width: 300px;
+  top: 20px;
+  left: -20px;
+  background-color: var(--cor-11);
+  position: absolute;
+}
