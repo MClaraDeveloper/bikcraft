@@ -51,8 +51,12 @@
   position: absolute;
 }
 @media (max-width: 800px) {
+  .footer > img {
+    display: none;
+  }
   .footer {
     grid-template-columns: 1fr;
+    gap: 60px;
   }
   .footer-informacoes {
     padding-left: 100px;
