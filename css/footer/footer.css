@@ -50,3 +50,14 @@
   background-color: var(--cor-11);
   position: absolute;
 }
+@media (max-width: 800px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer-informacoes {
+    padding-left: 100px;
+  }
+  .footer-contato {
+    padding-left: 100px;
+  }
+}
