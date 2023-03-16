@@ -1,0 +1,137 @@
+.bikes {
+  max-width: 100%;
+  align-content: start;
+}
+.bikes > p,
+h1 {
+  padding-left: 180px;
+}
+.nossas-bikes {
+  align-content: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.nossas-bikes h2 {
+  font-weight: 600;
+  padding-top: 10px;
+  position: relative;
+}
+.nossas-bikes h2::after {
+  content: "";
+  height: 8px;
+  width: 12px;
+  left: 0px;
+  top: -2px;
+  background-color: var(--cor-p1);
+  position: absolute;
+}
+.nossas-bikes p {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.nossas-bikes-detalhes {
+  display: grid;
+  padding-left: 32px;
+}
+
+.nossas-bikes a {
+  place-self: end;
+  font-weight: 600;
+}
+.nossas-bikes a::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../../icones/seta.svg");
+  transition: transform 0.2s;
+}
+.nossas-bikes a:after:hover {
+  transform: translateX(4px);
+}
+.nossas-bikes-lista {
+  display: flex;
+  flex-direction: column;
+}
+.nossas-bikes ul {
+  display: grid;
+  gap: 20px;
+}
+.nossas-bikes-lista img {
+  display: inline-block;
+  width: 24px;
+  margin-right: 8px;
+}
+
+.nossas-bikes-lista li {
+  align-items: center;
+}
+
+.Magic {
+  background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
+}
+.bicicletas-img {
+  display: grid;
+}
+.bicicletas-img img {
+  grid-area: 1/1;
+}
+.bicicletas-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background-color: var(--cor-12);
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+  color: var(--cor-0);
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .Magic {
+    background: var(--cor-11);
+  }
+  .nossas-bikes {
+    grid-template-columns: 1fr;
+  }
+  .nossas-bikes h2::after {
+    top: 25px;
+    left: -20px;
+  }
+  .bikes > p,
+  h1 {
+    padding-left: 50px;
+  }
+  .nossas-bikes-detalhes a {
+    place-self: start;
+  }
+  .nossas-bikes-detalhes ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nossas-bikes ul {
+    margin-bottom: 32px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nossas-bikes {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .nossas-bikes-detalhes a {
+    right: -10px;
+  }
+  .bikes > p,
+  h1 {
+    padding-left: 50px;
+  }
+}

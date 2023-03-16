@@ -51,17 +51,23 @@
   position: absolute;
 }
 @media (max-width: 800px) {
-  .footer > img {
+  .footer > div {
     display: none;
   }
+  .footer-contato {
+    padding-left: 80px;
+  }
+  .footer {
+    grid-template-columns: 2fr 2fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
   .footer {
     grid-template-columns: 1fr;
     gap: 60px;
   }
   .footer-informacoes {
-    padding-left: 100px;
-  }
-  .footer-contato {
-    padding-left: 100px;
+    padding-left: 80px;
   }
 }
