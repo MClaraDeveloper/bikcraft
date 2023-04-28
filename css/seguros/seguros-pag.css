@@ -39,10 +39,14 @@ li > img {
   padding-bottom: 120px;
   padding-top: 60px;
 }
-.perguntas-seguros dt {
+.perguntas-seguros button {
   padding-bottom: 8px;
   position: relative;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 .perguntas-seguros dd {
   width: 75ch;
@@ -66,27 +70,45 @@ li > img {
   position: absolute;
 }
 
-.perguntas-seguros dt::before {
-  content: "";
-  height: 4px;
-  width: 8px;
-  top: 10px;
-  left: -12px;
-  background-color: var(--cor-p1);
-  position: absolute;
+.perguntas-seguros button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
-.perguntas-seguros dt::after {
+
+.perguntas-seguros button::before {
   content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+}
+
+.perguntas-seguros button::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
   height: 9px;
-  width: 21px;
   background: url("../../icones/abrir.svg");
-  position: absolute;
-  right: -10px;
-  justify-content: center;
   transition: 0.3s;
 }
-.perguntas-seguros dt:hover::after {
+
+.perguntas-seguros button:hover::after,
+.perguntas-seguros button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+.js .perguntas-seguros dd {
+  display: none;
+}
+
+.js .perguntas-seguros dd.ativa {
+  display: block;
 }
 
 @media (max-width: 900px) {

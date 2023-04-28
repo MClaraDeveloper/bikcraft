@@ -10,6 +10,7 @@
 /*utilidades*/
 @import "./utilidades/componente.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
 @import "./utilidades/tipografia.css";
 
 /*bicicletas*/
@@ -20,6 +21,7 @@
 
 /*seguros*/
 @import "./seguros/seguros.css";
+@import "./seguros/seguros-pag.css";
 
 /*footer*/
 @import "./footer/footer.css";
@@ -27,8 +29,6 @@
 /*termos*/
 @import "./termos/termos.css";
 
-/*seguros*/
-@import "./seguros/seguros-pag.css";
 /*contato*/
 @import "./contato/contato.css";
 @import "./contato/formulario.css";

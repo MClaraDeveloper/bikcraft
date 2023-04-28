@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
 
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script> document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -31,11 +33,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-pop-gg cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-rob-g cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+        <h1 class="font-pop-gg cor-0 fadeInDown " data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-rob-g cor-5 fadeInDown " data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInDown " data-anime="600" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime="800">
         <source media="(max-width:800px)" srcset="./img/detalhes nimbus.jpg">
         <img src="./img/bike home 1.jpg" width="1280" height="1600" alt="Bicicleta eletrica preta">
       </picture>
@@ -96,19 +98,23 @@
       </div>
     </div>
   </article>
-  <section class="parceiros" aria-label="Nossos Parceros">
+
+  <section class="parceiros" aria-label="Nossos Parceiros">
     <h2 class="container font-pop-gg">nossos parceiros<span class="cor-p1">.</span></h2>
+
     <ul>
-      <li><img src="./parceiros/caravan.svg" alt="caravan" width="158" height="38"></li>
-      <li><img src="./parceiros/ranek.svg" width="167" height="37" alt="ranek"></li>
-      <li><img src="./parceiros/handel.svg" alt="handel" width="158" height="52"></li>
-      <li><img src="./parceiros/dogs.svg" width="170" height="40" alt="dogs"></li>
-      <li><img src="./parceiros/lescone.svg" alt="lescone" width="236" height="43"></li>
-      <li><img src="./parceiros/flexblog.svg" alt="flexblog" width="185" height="39"></li>
-      <li><img src="./parceiros/wildbeast.svg" alt="wildbeast" width="221" height="34"></li>
-      <li><img src="./parceiros/surfbot.svg" alt="surfbot" width="226" height="51"></li>
+      <li><img src="./parceiros/caravan.svg" alt="Caravan" width="140" height="38"></li>
+      <li><img src="./parceiros/ranek.svg" alt="Ranek" width="149" height="36"></li>
+      <li><img src="./parceiros/handel.svg" alt="Handel" width="140" height="50"></li>
+      <li><img src="./parceiros/dogs.svg" alt="Dogs" width="152" height="39"></li>
+      <li><img src="./parceiros/lescone.svg" alt="LeScone" width="208" height="41"></li>
+      <li><img src="./parceiros/flexblog.svg" alt="FlexBlog" width="165" height="38"></li>
+      <li><img src="./parceiros/wildbeast.svg" alt="Wildbeast" width="196" height="34"></li>
+      <li><img src="./parceiros/surfbot.svg" alt="Surfbot" width="200" height="49"></li>
     </ul>
   </section>
+
+
 
   <section class="depoimento" aria-label="Depoimento">
     <div>
@@ -178,6 +184,8 @@
     <h3 class=" font-rob-pp cor-8">Bikcraft Alguns Direitos Reservados.</h3>
 
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
